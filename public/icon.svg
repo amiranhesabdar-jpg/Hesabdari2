@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <rect width="512" height="512" rx="128" fill="#0f172a"/>
+  <circle cx="256" cy="256" r="180" stroke="#10b981" stroke-width="24" stroke-dasharray="800 200" stroke-linecap="round"/>
+  <!-- Persian/Accounting Emblem -->
+  <path d="M160 330V190C160 173.431 173.431 160 190 160H322C338.569 160 352 173.431 352 190V330" stroke="#38bdf8" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M210 240H302" stroke="#38bdf8" stroke-width="20" stroke-linecap="round"/>
+  <path d="M210 280H270" stroke="#38bdf8" stroke-width="20" stroke-linecap="round"/>
+  <!-- Growth chart line -->
+  <path d="M180 340L240 280L280 310L340 220" stroke="#10b981" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="340" cy="220" r="14" fill="#34d399"/>
+</svg>

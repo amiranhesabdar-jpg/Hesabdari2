@@ -1,0 +1,1107 @@
+{
+  "settings": {
+    "businessName": "گروه تولیدی و بازرگانی امیران صنعت",
+    "taxNumber": "۴۱۱۵۶۸۹۳۲۱۴",
+    "phone": "۰۲۱-۸۸۹۹۲۲۰۱",
+    "address": "تهران، شهرک صنعتی شمس‌آباد، بلوار بوستان، پلاک ۱۲۴",
+    "currency": "تومان",
+    "vatRate": 10,
+    "autoJournal": true,
+    "exchangeRates": {
+      "TOMAN": 1,
+      "USD": 65000,
+      "EUR": 71000,
+      "IRR": 0.1
+    }
+  },
+  "products": [
+    {
+      "id": "MAT-101",
+      "code": "RAW-001",
+      "name": "ورق روغنی فولاد مبارکه ضخامت ۱.۵ میلی‌متر",
+      "type": "raw_material",
+      "unit": "کیلوگرم",
+      "buyPrice": 48500,
+      "sellPrice": 0,
+      "stock": 1450,
+      "minStockAlert": 300,
+      "warehouse": "materials",
+      "category": "فلزات و آهن‌آلات",
+      "barcode": "626001002001",
+      "description": "مواد اولیه ساخت بدنه تابلوهای صنعتی"
+    },
+    {
+      "id": "MAT-102",
+      "code": "RAW-002",
+      "name": "رنگ پودری الکترواستاتیک طوسی ۷۰۳۵",
+      "type": "raw_material",
+      "unit": "کیلوگرم",
+      "buyPrice": 195000,
+      "sellPrice": 0,
+      "stock": 120,
+      "minStockAlert": 25,
+      "warehouse": "materials",
+      "category": "رنگ و پوشش",
+      "barcode": "626001002002",
+      "description": "پوشش محافظتی و عایق صنعتی"
+    },
+    {
+      "id": "MAT-103",
+      "code": "RAW-003",
+      "name": "شینه مسی تابلویی ۲۰×۳",
+      "type": "raw_material",
+      "unit": "متر",
+      "buyPrice": 420000,
+      "sellPrice": 0,
+      "stock": 85,
+      "minStockAlert": 20,
+      "warehouse": "materials",
+      "category": "الکتریک و مس",
+      "barcode": "626001002003"
+    },
+    {
+      "id": "MAT-104",
+      "code": "RAW-004",
+      "name": "کلید مینیاتوری تک‌پل ۱۶ آمپر هیوندای",
+      "type": "raw_material",
+      "unit": "عدد",
+      "buyPrice": 185000,
+      "sellPrice": 0,
+      "stock": 310,
+      "minStockAlert": 50,
+      "warehouse": "materials",
+      "category": "تجهیزات برقی",
+      "barcode": "626001002004"
+    },
+    {
+      "id": "PRD-201",
+      "code": "MFG-001",
+      "name": "تابلو برق توزیع ریتال ابعاد ۸۰×۱۰۰ سانتی‌متر",
+      "type": "finished_good",
+      "unit": "دستگاه",
+      "buyPrice": 2850000,
+      "sellPrice": 4200000,
+      "stock": 24,
+      "minStockAlert": 5,
+      "warehouse": "finished",
+      "category": "محصولات ساخته شده",
+      "barcode": "626002001001",
+      "description": "محصول نهایی خط مونتاژ کارخانه امیران"
+    },
+    {
+      "id": "PRD-202",
+      "code": "MFG-002",
+      "name": "باکس کنتور ۳ فاز روکار صنعتی",
+      "type": "finished_good",
+      "unit": "دستگاه",
+      "buyPrice": 1250000,
+      "sellPrice": 1890000,
+      "stock": 45,
+      "minStockAlert": 10,
+      "warehouse": "finished",
+      "category": "محصولات ساخته شده",
+      "barcode": "626002001002"
+    },
+    {
+      "id": "TRD-301",
+      "code": "COM-001",
+      "name": "اینورتر کنترل دور موتور ۳.۷ کیلووات تک‌به‌سه",
+      "type": "commercial_good",
+      "unit": "دستگاه",
+      "buyPrice": 6200000,
+      "sellPrice": 8400000,
+      "stock": 18,
+      "minStockAlert": 4,
+      "warehouse": "commercial",
+      "category": "اتوماسیون صنعتی",
+      "barcode": "626003001001",
+      "description": "وارداتی بازرگانی - گارانتی ۱۸ ماهه شرکتی"
+    },
+    {
+      "id": "TRD-302",
+      "code": "COM-002",
+      "name": "کابل قدرت افشان ۲×۴ مس تبریز (حلقه ۱۰۰ متری)",
+      "type": "commercial_good",
+      "unit": "حلقه",
+      "buyPrice": 1800000,
+      "sellPrice": 2450000,
+      "stock": 35,
+      "minStockAlert": 8,
+      "warehouse": "commercial",
+      "category": "سیم و کابل",
+      "barcode": "626003001002"
+    }
+  ],
+  "boms": [
+    {
+      "id": "BOM-001",
+      "code": "BOM-RITTAL-100",
+      "name": "فرمول ساخت تابلو برق توزیع ریتال ۸۰×۱۰۰",
+      "finishedGoodId": "PRD-201",
+      "finishedGoodName": "تابلو برق توزیع ریتال ابعاد ۸۰×۱۰۰ سانتی‌متر",
+      "outputQuantity": 1,
+      "items": [
+        {
+          "rawMaterialId": "MAT-101",
+          "rawMaterialName": "ورق روغنی فولاد مبارکه ضخامت ۱.۵ میلی‌متر",
+          "quantity": 28,
+          "unit": "کیلوگرم",
+          "unitCost": 48500,
+          "totalCost": 1358000
+        },
+        {
+          "rawMaterialId": "MAT-102",
+          "rawMaterialName": "رنگ پودری الکترواستاتیک طوسی ۷۰۳۵",
+          "quantity": 2.5,
+          "unit": "کیلوگرم",
+          "unitCost": 195000,
+          "totalCost": 487500
+        },
+        {
+          "rawMaterialId": "MAT-103",
+          "rawMaterialName": "شینه مسی تابلویی ۲۰×۳",
+          "quantity": 0.8,
+          "unit": "متر",
+          "unitCost": 420000,
+          "totalCost": 336000
+        },
+        {
+          "rawMaterialId": "MAT-104",
+          "rawMaterialName": "کلید مینیاتوری تک‌پل ۱۶ آمپر هیوندای",
+          "quantity": 2,
+          "unit": "عدد",
+          "unitCost": 185000,
+          "totalCost": 370000
+        }
+      ],
+      "directLaborCost": 185000,
+      "overheadCost": 113500,
+      "totalDirectMaterialCost": 2551500,
+      "totalCost": 2850000,
+      "unitCost": 2850000,
+      "notes": "استاندارد IP54 برای مقاومت در برابر پاشش آب و گرد و غبار"
+    }
+  ],
+  "productionOrders": [
+    {
+      "id": "PRD-ORD-01",
+      "orderNumber": "PRD-1403-088",
+      "bomId": "BOM-001",
+      "finishedGoodId": "PRD-201",
+      "finishedGoodName": "تابلو برق توزیع ریتال ابعاد ۸۰×۱۰۰ سانتی‌متر",
+      "plannedQuantity": 10,
+      "actualQuantity": 10,
+      "status": "completed",
+      "startDate": "1403/06/15",
+      "endDate": "1403/06/18",
+      "totalCost": 28500000,
+      "unitCost": 2850000,
+      "journalEntryId": "JRN-1004"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "CNT-01",
+      "code": "CUST-101",
+      "name": "شرکت پتروشیمی زاگرس",
+      "type": "customer",
+      "phone": "۰۲۱-۸۸۲۲۳۳۴۴",
+      "mobile": "۰۹۱۲۱۱۱۴۴۵۵",
+      "nationalId": "۱۰۱۰۲۲۳۳۴۴۵",
+      "economicCode": "۴۱۱۳۳۲۲۱۱۴",
+      "address": "عسلویه، منطقه ویژه اقتصادی انرژی پارس",
+      "creditLimit": 150000000,
+      "currentBalance": 32400000
+    },
+    {
+      "id": "CNT-02",
+      "code": "CUST-102",
+      "name": "مهندسی برق و تاسیسات نیروگستر",
+      "type": "customer",
+      "phone": "۰۳۱-۳۲۲۳۱۴۱۵",
+      "mobile": "۰۹۱۳۳۳۳۹۹۸۸",
+      "nationalId": "۱۰۲۶۰۴۵۲۳۶۱",
+      "address": "اصفهان، شهرک علمی و تحقیقاتی",
+      "creditLimit": 80000000,
+      "currentBalance": 14800000
+    },
+    {
+      "id": "CNT-03",
+      "code": "SUP-201",
+      "name": "شرکت بازرگانی فولاد متین اصفهان",
+      "type": "supplier",
+      "phone": "۰۳۱-۳۶۲۸۲۹۳۰",
+      "mobile": "۰۹۱۳۱۱۴۵۵۶۶",
+      "nationalId": "۱۰۲۶۰۰۱۱۴۴۲",
+      "address": "اصفهان، خیابان هاتف، مجتمع زرین",
+      "creditLimit": 200000000,
+      "currentBalance": -25000000
+    },
+    {
+      "id": "CNT-04",
+      "code": "SUP-202",
+      "name": "صنایع رنگ و عایق آریا شیمی",
+      "type": "supplier",
+      "phone": "۰۲۱-۶۶۷۷۸۸۹۹",
+      "mobile": "۰۹۱۲۴۴۵۵۶۶۷",
+      "address": "تهران، جاده مخصوص کرج، کیلومتر ۱۱",
+      "creditLimit": 50000000,
+      "currentBalance": -8500000
+    }
+  ],
+  "invoices": [
+    {
+      "id": "INV-1001",
+      "invoiceNumber": "INV-1403-1042",
+      "type": "sales",
+      "contactId": "CNT-01",
+      "contactName": "شرکت پتروشیمی زاگرس",
+      "date": "1403/06/19",
+      "dueDate": "1403/07/19",
+      "items": [
+        {
+          "id": "ITEM-1",
+          "productId": "PRD-201",
+          "productName": "تابلو برق توزیع ریتال ابعاد ۸۰×۱۰۰ سانتی‌متر",
+          "productCode": "MFG-001",
+          "unit": "دستگاه",
+          "quantity": 6,
+          "unitPrice": 4200000,
+          "discount": 500000,
+          "taxRate": 10,
+          "taxAmount": 2470000,
+          "total": 27170000
+        },
+        {
+          "id": "ITEM-2",
+          "productId": "TRD-301",
+          "productName": "اینورتر کنترل دور موتور ۳.۷ کیلووات تک‌به‌سه",
+          "productCode": "COM-001",
+          "unit": "دستگاه",
+          "quantity": 2,
+          "unitPrice": 8400000,
+          "discount": 0,
+          "taxRate": 10,
+          "taxAmount": 1680000,
+          "total": 18480000
+        }
+      ],
+      "subtotal": 42000000,
+      "totalDiscount": 500000,
+      "totalTax": 4150000,
+      "shippingCost": 350000,
+      "grandTotal": 46000000,
+      "currency": "TOMAN",
+      "exchangeRate": 1,
+      "baseCurrencyGrandTotal": 46000000,
+      "paidAmount": 20000000,
+      "baseCurrencyPaidAmount": 20000000,
+      "remainingAmount": 26000000,
+      "baseCurrencyRemainingAmount": 26000000,
+      "paymentStatus": "partial",
+      "paymentMethod": "bank_transfer",
+      "notes": "تحویل درب انبار مرکزی شرکت - ارسال با باربری کالارسان",
+      "journalEntryId": "JRN-1005"
+    },
+    {
+      "id": "INV-1002",
+      "invoiceNumber": "EXP-1403-010",
+      "type": "sales",
+      "currency": "USD",
+      "exchangeRate": 65000,
+      "contactId": "CNT-02",
+      "contactName": "مهندسی برق و تاسیسات نیروگستر (صادرات)",
+      "date": "1403/06/20",
+      "dueDate": "1403/07/20",
+      "items": [
+        {
+          "id": "ITEM-EXP-1",
+          "productId": "PRD-201",
+          "productName": "تابلو برق توزیع ریتال ابعاد ۸۰×۱۰۰ سانتی‌متر",
+          "productCode": "MFG-001",
+          "unit": "دستگاه",
+          "quantity": 2,
+          "unitPrice": 650,
+          "discount": 0,
+          "taxRate": 0,
+          "taxAmount": 0,
+          "total": 1300
+        },
+        {
+          "id": "ITEM-EXP-2",
+          "productId": "PRD-202",
+          "productName": "باکس کنتور ۳ فاز روکار صنعتی",
+          "productCode": "MFG-002",
+          "unit": "دستگاه",
+          "quantity": 4,
+          "unitPrice": 50,
+          "discount": 0,
+          "taxRate": 0,
+          "taxAmount": 0,
+          "total": 200
+        }
+      ],
+      "subtotal": 1500,
+      "totalDiscount": 0,
+      "totalTax": 0,
+      "shippingCost": 0,
+      "grandTotal": 1500,
+      "baseCurrencyGrandTotal": 97500000,
+      "paidAmount": 1500,
+      "baseCurrencyPaidAmount": 97500000,
+      "remainingAmount": 0,
+      "baseCurrencyRemainingAmount": 0,
+      "paymentStatus": "paid",
+      "paymentMethod": "bank_transfer",
+      "notes": "فاکتور صادراتی رسمی دلاری - تسویه کامل از طریق حواله صرافی"
+    },
+    {
+      "id": "INV-1003",
+      "invoiceNumber": "IMP-1403-004",
+      "type": "purchase",
+      "currency": "EUR",
+      "exchangeRate": 71000,
+      "contactId": "CNT-03",
+      "contactName": "شرکت بازرگانی فولاد متین اصفهان (واردات قطعات)",
+      "date": "1403/06/12",
+      "dueDate": "1403/07/12",
+      "items": [
+        {
+          "id": "ITEM-IMP-1",
+          "productId": "TRD-301",
+          "productName": "اینورتر کنترل دور موتور ۳.۷ کیلووات تک‌به‌سه",
+          "productCode": "COM-001",
+          "unit": "دستگاه",
+          "quantity": 5,
+          "unitPrice": 180,
+          "discount": 0,
+          "taxRate": 10,
+          "taxAmount": 90,
+          "total": 990
+        }
+      ],
+      "subtotal": 900,
+      "totalDiscount": 0,
+      "totalTax": 90,
+      "shippingCost": 0,
+      "grandTotal": 990,
+      "baseCurrencyGrandTotal": 70290000,
+      "paidAmount": 990,
+      "baseCurrencyPaidAmount": 70290000,
+      "remainingAmount": 0,
+      "baseCurrencyRemainingAmount": 0,
+      "paymentStatus": "paid",
+      "paymentMethod": "bank_transfer",
+      "notes": "خرید مواد اولیه و قطعات وارداتی با ارز یورو"
+    }
+  ],
+  "cheques": [
+    {
+      "id": "CHQ-01",
+      "chequeNumber": "۴۴۱۸۹۲",
+      "sayadNumber": "۷۱۵۲۹۰۱۴۵۵۲۸۱۴۰۲",
+      "type": "received",
+      "contactId": "CNT-01",
+      "contactName": "شرکت پتروشیمی زاگرس",
+      "bankName": "بانک ملت",
+      "branch": "شعبه مرکزی عسلویه",
+      "amount": 26000000,
+      "issueDate": "1403/06/19",
+      "dueDate": "1403/07/20",
+      "status": "pending",
+      "notes": "بابت باقیمانده فاکتور فروش شماره ۱۰۴۲"
+    },
+    {
+      "id": "CHQ-02",
+      "chequeNumber": "۹۸۲۰۱۲",
+      "sayadNumber": "۴۴۵۱۹۰۲۲۱۱۸۹۴۵۰۱",
+      "type": "issued",
+      "contactId": "CNT-03",
+      "contactName": "شرکت بازرگانی فولاد متین اصفهان",
+      "bankName": "بانک صادرات",
+      "branch": "شعبه شمس‌آباد",
+      "amount": 25000000,
+      "issueDate": "1403/06/05",
+      "dueDate": "1403/07/10",
+      "status": "pending",
+      "notes": "بابت خرید اعتباری ورق روغنی"
+    }
+  ],
+  "accounts": [
+    {
+      "id": "ACC-10",
+      "code": "10",
+      "name": "دارایی‌های جاری",
+      "level": "group",
+      "category": "current_assets",
+      "nature": "debit",
+      "balance": 148500000
+    },
+    {
+      "id": "ACC-101",
+      "code": "101",
+      "name": "موجودی نقد و بانک",
+      "level": "general",
+      "parentId": "ACC-10",
+      "category": "current_assets",
+      "nature": "debit",
+      "balance": 45000000
+    },
+    {
+      "id": "ACC-10101",
+      "code": "10101",
+      "name": "صندوق مرکزی شرکت",
+      "level": "subsidiary",
+      "parentId": "ACC-101",
+      "category": "current_assets",
+      "nature": "debit",
+      "balance": 5000000
+    },
+    {
+      "id": "ACC-10102",
+      "code": "10102",
+      "name": "حساب جاری بانک ملت (شعبه شمس‌آباد)",
+      "level": "subsidiary",
+      "parentId": "ACC-101",
+      "category": "current_assets",
+      "nature": "debit",
+      "balance": 40000000
+    },
+    {
+      "id": "ACC-102",
+      "code": "102",
+      "name": "اسناد دریافتنی تجاری (چک‌های اشخاص)",
+      "level": "general",
+      "parentId": "ACC-10",
+      "category": "current_assets",
+      "nature": "debit",
+      "balance": 26000000
+    },
+    {
+      "id": "ACC-103",
+      "code": "103",
+      "name": "حساب‌های دریافتنی تجاری (بدهکاران)",
+      "level": "general",
+      "parentId": "ACC-10",
+      "category": "current_assets",
+      "nature": "debit",
+      "balance": 47200000
+    },
+    {
+      "id": "ACC-104",
+      "code": "104",
+      "name": "موجودی مواد و کالا",
+      "level": "general",
+      "parentId": "ACC-10",
+      "category": "current_assets",
+      "nature": "debit",
+      "balance": 30300000
+    },
+    {
+      "id": "ACC-20",
+      "code": "20",
+      "name": "دارایی‌های غیرجاری و ثابت",
+      "level": "group",
+      "category": "non_current_assets",
+      "nature": "debit",
+      "balance": 120000000
+    },
+    {
+      "id": "ACC-201",
+      "code": "201",
+      "name": "ماشین‌آلات و تجهیزات خط تولید",
+      "level": "general",
+      "parentId": "ACC-20",
+      "category": "non_current_assets",
+      "nature": "debit",
+      "balance": 120000000
+    },
+    {
+      "id": "ACC-30",
+      "code": "30",
+      "name": "بدهی‌های جاری",
+      "level": "group",
+      "category": "current_liabilities",
+      "nature": "credit",
+      "balance": 58500000
+    },
+    {
+      "id": "ACC-301",
+      "code": "301",
+      "name": "اسناد پرداختنی تجاری (چک‌های صادره)",
+      "level": "general",
+      "parentId": "ACC-30",
+      "category": "current_liabilities",
+      "nature": "credit",
+      "balance": 25000000
+    },
+    {
+      "id": "ACC-302",
+      "code": "302",
+      "name": "حساب‌های پرداختنی تجاری (بستانکاران)",
+      "level": "general",
+      "parentId": "ACC-30",
+      "category": "current_liabilities",
+      "nature": "credit",
+      "balance": 33500000
+    },
+    {
+      "id": "ACC-50",
+      "code": "50",
+      "name": "حقوق مالکانه و سرمایه",
+      "level": "group",
+      "category": "equity",
+      "nature": "credit",
+      "balance": 180000000
+    },
+    {
+      "id": "ACC-501",
+      "code": "501",
+      "name": "سرمایه اولیه ثبت شده",
+      "level": "general",
+      "parentId": "ACC-50",
+      "category": "equity",
+      "nature": "credit",
+      "balance": 180000000
+    },
+    {
+      "id": "ACC-60",
+      "code": "60",
+      "name": "درآمدها و فروش",
+      "level": "group",
+      "category": "revenues",
+      "nature": "credit",
+      "balance": 41500000
+    },
+    {
+      "id": "ACC-601",
+      "code": "601",
+      "name": "فروش محصولات تولیدی و بازرگانی",
+      "level": "general",
+      "parentId": "ACC-60",
+      "category": "revenues",
+      "nature": "credit",
+      "balance": 41500000
+    },
+    {
+      "id": "ACC-70",
+      "code": "70",
+      "name": "بهای تمام شده کالای فروش رفته",
+      "level": "group",
+      "category": "cogs",
+      "nature": "debit",
+      "balance": 29500000
+    },
+    {
+      "id": "ACC-701",
+      "code": "701",
+      "name": "بهای تمام شده کالای تولیدی و تجاری",
+      "level": "general",
+      "parentId": "ACC-70",
+      "category": "cogs",
+      "nature": "debit",
+      "balance": 29500000
+    },
+    {
+      "id": "ACC-80",
+      "code": "80",
+      "name": "هزینه‌های اداری، عمومی و توزیع",
+      "level": "group",
+      "category": "expenses",
+      "nature": "debit",
+      "balance": 4000000
+    },
+    {
+      "id": "ACC-801",
+      "code": "801",
+      "name": "هزینه حقوق و دستمزد اداری",
+      "level": "general",
+      "parentId": "ACC-80",
+      "category": "expenses",
+      "nature": "debit",
+      "balance": 3200000
+    },
+    {
+      "id": "ACC-802",
+      "code": "802",
+      "name": "هزینه ملزومات و ابزار مصرفی",
+      "level": "general",
+      "parentId": "ACC-80",
+      "category": "expenses",
+      "nature": "debit",
+      "balance": 800000
+    }
+  ],
+  "journalEntries": [
+    {
+      "id": "JRN-1001",
+      "entryNumber": 1,
+      "date": "1403/01/05",
+      "referenceNumber": "REF-001",
+      "description": "سند افتتاحیه و ثبت سرمایه اولیه شرکا",
+      "rows": [
+        {
+          "id": "R1",
+          "accountId": "ACC-10102",
+          "accountCode": "10102",
+          "accountName": "حساب جاری بانک ملت",
+          "description": "آورده نقدی سرمایه",
+          "debit": 60000000,
+          "credit": 0
+        },
+        {
+          "id": "R2",
+          "accountId": "ACC-201",
+          "accountCode": "201",
+          "accountName": "ماشین‌آلات و تجهیزات خط تولید",
+          "description": "تجهیزات اولیه کارخانه",
+          "debit": 120000000,
+          "credit": 0
+        },
+        {
+          "id": "R3",
+          "accountId": "ACC-501",
+          "accountCode": "501",
+          "accountName": "سرمایه اولیه ثبت شده",
+          "description": "سرمایه ثبتی شرکا",
+          "debit": 0,
+          "credit": 180000000
+        }
+      ],
+      "totalDebit": 180000000,
+      "totalCredit": 180000000,
+      "status": "approved",
+      "source": "manual"
+    },
+    {
+      "id": "JRN-1005",
+      "entryNumber": 2,
+      "date": "1403/06/19",
+      "referenceNumber": "INV-1042",
+      "description": "ثبت فاکتور فروش شماره ۱۰۴۲ - شرکت پتروشیمی زاگرس",
+      "rows": [
+        {
+          "id": "R1",
+          "accountId": "ACC-10102",
+          "accountCode": "10102",
+          "accountName": "حساب جاری بانک ملت",
+          "description": "دریافت واریزی نقدی مشتری",
+          "debit": 20000000,
+          "credit": 0
+        },
+        {
+          "id": "R2",
+          "accountId": "ACC-103",
+          "accountCode": "103",
+          "accountName": "حساب‌های دریافتنی تجاری",
+          "description": "مانده نسیه فاکتور فروش",
+          "debit": 26000000,
+          "credit": 0
+        },
+        {
+          "id": "R3",
+          "accountId": "ACC-601",
+          "accountCode": "601",
+          "accountName": "فروش محصولات تولیدی و بازرگانی",
+          "description": "خالص فروش اقلام",
+          "debit": 0,
+          "credit": 41500000
+        },
+        {
+          "id": "R4",
+          "accountId": "ACC-302",
+          "accountCode": "302",
+          "accountName": "حساب‌های پرداختنی تجاری",
+          "description": "مالیات بر ارزش افزوده و کرایه",
+          "debit": 0,
+          "credit": 4500000
+        }
+      ],
+      "totalDebit": 46000000,
+      "totalCredit": 46000000,
+      "status": "approved",
+      "source": "invoice"
+    }
+  ],
+  "apiKeys": [
+    {
+      "id": "KEY-01",
+      "name": "کلید وب‌سایت فروشگاهی (WooCommerce / Site)",
+      "key": "amiran_live_9f83a21bc94e7732a10d9",
+      "createdAt": "1403/06/01",
+      "lastUsed": "1403/06/20 - ۱۱:۳۰",
+      "permissions": [
+        "read",
+        "write"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "KEY-02",
+      "name": "اسکریپت ربات و اپلیکیشن پایتون اتوماسیون انبار",
+      "key": "amiran_py_auto_38bfa791c6e118029a7f",
+      "createdAt": "1403/06/10",
+      "lastUsed": "1403/06/19 - ۱۸:۴۵",
+      "permissions": [
+        "read",
+        "write",
+        "admin"
+      ],
+      "status": "active"
+    }
+  ],
+  "webhooks": [
+    {
+      "id": "WH-01",
+      "url": "https://myshop.com/api/amiran/sync-stock",
+      "event": "stock.low",
+      "active": true,
+      "secret": "whsec_99381a82f",
+      "lastTriggered": "1403/06/18"
+    },
+    {
+      "id": "WH-02",
+      "url": "https://myshop.com/api/amiran/new-invoice",
+      "event": "invoice.created",
+      "active": true,
+      "secret": "whsec_22910ba1c",
+      "lastTriggered": "1403/06/19"
+    }
+  ],
+  "plugins": [
+    {
+      "id": "PLG-01",
+      "slug": "woocommerce-sync",
+      "name": "همگام‌ساز فروشگاه آنلاین و ووکامرس",
+      "version": "2.4.0",
+      "description": "اتصال دوطرفه به فروشگاه‌های آنلاین: همگام‌سازی لحظه‌ای موجودی کالاها، قیمت‌ها و ثبت خودکار فاکتورهای وب‌سایت.",
+      "category": "ecommerce",
+      "author": "تیم نرم‌افزاری امیران",
+      "enabled": true,
+      "installed": true,
+      "icon": "ShoppingBag",
+      "settings": {
+        "siteUrl": "https://amiran-industrial.ir",
+        "consumerKey": "ck_773918a992bc",
+        "autoCreateInvoice": true
+      }
+    },
+    {
+      "id": "PLG-02",
+      "slug": "barcode-label-printer",
+      "name": "چاپگر حرفه‌ای بارکد و لیبل انبار",
+      "version": "1.8.2",
+      "description": "طراحی و چاپ انواع برچسب‌های استاندارد، بارکدهای دو بعدی QR Code و بارکدهای میله‌ای Code128 برای ردیابی انبار.",
+      "category": "hardware",
+      "author": "امیران سیستم",
+      "enabled": true,
+      "installed": true,
+      "icon": "QrCode"
+    },
+    {
+      "id": "PLG-03",
+      "slug": "sayad-cheque-radar",
+      "name": "رادار چک صیادی و استعلام هوشمند",
+      "version": "3.1.0",
+      "description": "ثبت مستقیم در سامانه صیاد، استعلام خوش‌حسابی صادرکننده، و یادآوری پیامکی سررسید چک‌ها به خریداران.",
+      "category": "accounting",
+      "author": "فین‌تک امیران",
+      "enabled": true,
+      "installed": true,
+      "icon": "CreditCard"
+    },
+    {
+      "id": "PLG-04",
+      "slug": "sms-customer-notifier",
+      "name": "افزونه پیامک اطلاع‌رسانی مالی",
+      "version": "2.0.1",
+      "description": "ارسال خودکار پیامک صدور فاکتور، مانده حساب، لینک پرداخت آنلاین و یادآوری بدهی‌ها به تلفن همراه مشتری.",
+      "category": "automation",
+      "author": "فناوری پیامک پارس",
+      "enabled": true,
+      "installed": true,
+      "icon": "MessageSquare",
+      "settings": {
+        "senderNumber": "5000400012",
+        "sendOnInvoice": true
+      }
+    },
+    {
+      "id": "PLG-05",
+      "slug": "ai-financial-auditor",
+      "name": "دستیار هوش مصنوعی تحلیل مالی و پیش‌بینی سود",
+      "version": "1.2.0",
+      "description": "تحلیل نسبت‌های مالی، هشدار ریسک نقدینگی، برآورد نقطه سربه سر خط تولید و پیشنهادات قیمت‌گذاری با هوش مصنوعی.",
+      "category": "ai",
+      "author": "امیران AI Lab",
+      "enabled": true,
+      "installed": true,
+      "icon": "Sparkles"
+    },
+    {
+      "id": "PLG-06",
+      "slug": "payroll-attendance",
+      "name": "حقوق و دستمزد و ثبت ساعت کارکرد پرسنل",
+      "version": "2.3.0",
+      "description": "محاسبه اضافه‌کاری، حق اولاد، حق بن، بیمه تامین اجتماعی و مالیات بر حقوق پرسنل خط تولید و بازرگانی.",
+      "category": "accounting",
+      "author": "سیستم‌های یکپارچه امیران",
+      "enabled": false,
+      "installed": true,
+      "icon": "Users"
+    }
+  ],
+  "subscription": {
+    "planId": "plan_pro",
+    "planName": "پلن حرفه‌ای (تولیدی و بازرگانی)",
+    "status": "active",
+    "startDate": "1403/05/01",
+    "endDate": "1404/05/01",
+    "daysRemaining": 185,
+    "autoRenew": true,
+    "billingCycle": "annual",
+    "invoicesUsedThisMonth": 38,
+    "maxInvoicesLimit": 1500
+  },
+  "subscriptionPlans": [
+    {
+      "id": "plan_starter",
+      "name": "پلن پایه (استارتاپی و فروشگاهی)",
+      "tagline": "مناسب فروشگاه‌ها، کسب‌وکارهای نوپا و دفاتر تجاری کوچک",
+      "monthlyPrice": 390000,
+      "quarterlyPrice": 990000,
+      "annualPrice": 3200000,
+      "features": [
+        "صدور فاکتور رسمی و غیررسمی تا ۲۰۰ عدد در ماه",
+        "انبارداری تک‌انباره و کنترل موجودی لحظه‌ای",
+        "سیستم مشتریان، بدهکاران و بستانکاران",
+        "مدیریت اسناد چک صیادی و سررسیدها",
+        "پشتیبان‌گیری ابری روزانه",
+        "پشتیبانی آنلاین تیکت و چت"
+      ],
+      "maxUsers": 2,
+      "maxInvoicesPerMonth": 200,
+      "maxWarehouses": 1,
+      "allowAI": false,
+      "allowCustomPlugins": false,
+      "allowPythonApi": false,
+      "isActive": true
+    },
+    {
+      "id": "plan_pro",
+      "name": "پلن حرفه‌ای (تولیدی، صنعتی و بازرگانی)",
+      "tagline": "کامل‌ترین بسته برای کارگاه‌ها، کارخانه‌ها و شرکت‌های بازرگانی فعال",
+      "monthlyPrice": 850000,
+      "quarterlyPrice": 2250000,
+      "annualPrice": 6900000,
+      "features": [
+        "صدور فاکتور و پیش‌فاکتور نامحدود (تا ۱۵۰۰ عدد)",
+        "ماژول پیشرفته فرمول ساخت (BOM) و محاسبه بهای تمام شده COGM",
+        "حسابداری صنعتی و ثبت دستورات تولید کارخانه",
+        "سیستم انبارداری چندگانه (انبار مواد، انبار محصول، انبار بازرگانی)",
+        "دفاتر کل، معین و اسناد دوبل خودکار حسابداری",
+        "ترازنامه و گزارش سود و زیان دوره‌ای",
+        "دستیار هوش مصنوعی تحلیل سودآوری و ریسک نقدینگی",
+        "پشتیبانی تلفنی و تلگرام ۲۴ ساعته"
+      ],
+      "maxUsers": 8,
+      "maxInvoicesPerMonth": 1500,
+      "maxWarehouses": 5,
+      "allowAI": true,
+      "allowCustomPlugins": true,
+      "allowPythonApi": true,
+      "isPopular": true,
+      "badge": "پیشنهاد ویژه و پرفروش",
+      "isActive": true
+    },
+    {
+      "id": "plan_enterprise",
+      "name": "پلن سازمانی و هلدینگ (Enterprise)",
+      "tagline": "ویژه سازمان‌ها، هلدینگ‌های صنعتی و خطوط تولید چند کارخانه‌ای",
+      "monthlyPrice": 1950000,
+      "quarterlyPrice": 5200000,
+      "annualPrice": 15900000,
+      "features": [
+        "تمام امکانات پلن حرفه‌ای به‌صورت ۱۰۰٪ نامحدود",
+        "تعداد کاربران نامحدود با تفکیک دقیق دسترسی‌ها (RBAC)",
+        "انبارداری بی‌نهایت با حواله بین انبارها و کنترل بارکد پیشرفته",
+        "اتصال کامل API، وب‌هوک و اسکریپت‌های پایتون",
+        "همگام‌سازی مستقیم با ووکامرس، دیجی‌کالا و وب‌سایت‌های سازمانی",
+        "سرور ابری اختصاصی با امنیت بانکی و گواهی SSL اختصاصی",
+        "کارشناس استقرار و آموزش حضوری در محل شرکت",
+        "پشتیبانی مدیر حساب اختصاصی (VIP)"
+      ],
+      "maxUsers": -1,
+      "maxInvoicesPerMonth": -1,
+      "maxWarehouses": -1,
+      "allowAI": true,
+      "allowCustomPlugins": true,
+      "allowPythonApi": true,
+      "badge": "نامحدود و VIP",
+      "isActive": true
+    }
+  ],
+  "paymentTransactions": [
+    {
+      "id": "TXN-14030501-89",
+      "planId": "plan_pro",
+      "planName": "پلن حرفه‌ای (تولیدی و بازرگانی)",
+      "durationMonths": 12,
+      "amount": 6900000,
+      "currency": "تومان",
+      "paymentMethod": "online_gateway",
+      "gatewayName": "درگاه پرداخت شاپرک / سامان",
+      "transactionCode": "SHP-99214488310",
+      "cardLast4": "۵۰۲۲",
+      "createdAt": "1403/05/01",
+      "paidAt": "1403/05/01 - ۱۴:۳۲",
+      "status": "successful",
+      "reviewedBy": "سیستم هوشمند شاپرک",
+      "notes": "تمدید یکساله اشتراک نرم‌افزار حسابداری ابری امیران با موفقیت انجام شد."
+    },
+    {
+      "id": "TXN-14030615-12",
+      "planId": "plan_enterprise",
+      "planName": "پلن سازمانی و هلدینگ (Enterprise)",
+      "durationMonths": 3,
+      "amount": 5200000,
+      "currency": "تومان",
+      "paymentMethod": "card_to_card",
+      "receiptNumber": "FISH-7749102",
+      "senderName": "محمدحسین حسینی (شرکت امیران صنعت)",
+      "senderCard": "۶۰۳۷-۹۹۷۵-***-۸۸۱۲",
+      "createdAt": "1403/06/15",
+      "status": "pending_verification",
+      "notes": "فیش واریز کارت به کارت بابت ارتقای دوره به سازمانی - منتظر بررسی و تأیید مدیریت سیستم."
+    }
+  ],
+  "users": [
+    {
+      "id": "USR-01",
+      "username": "admin",
+      "fullName": "مهندس امیران (مدیر ارشد سیستم)",
+      "phone": "۰۹۱۲۰۰۰۹۹۸۸",
+      "email": "amiranhesabdar@gmail.com",
+      "role": "super_admin",
+      "permissions": {
+        "canViewFinancials": true,
+        "canIssueInvoices": true,
+        "canDeleteEntries": true,
+        "canManageProduction": true,
+        "canManageInventory": true,
+        "canAccessApi": true,
+        "canManageBackup": true,
+        "canManagePlugins": true,
+        "canManageUsers": true
+      },
+      "status": "active",
+      "createdAt": "1402/01/01",
+      "lastLogin": "امروز - ۱۰:۴۵"
+    },
+    {
+      "id": "USR-02",
+      "username": "sadeghi_acc",
+      "fullName": "خانم سمیرا صادقی",
+      "phone": "۰۹۱۲۳۴۵۶۷۸۹",
+      "email": "sadeghi@amiran-co.ir",
+      "role": "chief_accountant",
+      "permissions": {
+        "canViewFinancials": true,
+        "canIssueInvoices": true,
+        "canDeleteEntries": false,
+        "canManageProduction": true,
+        "canManageInventory": true,
+        "canAccessApi": false,
+        "canManageBackup": true,
+        "canManagePlugins": false,
+        "canManageUsers": false
+      },
+      "status": "active",
+      "createdAt": "1402/08/15",
+      "lastLogin": "امروز - ۰۹:۱۵"
+    },
+    {
+      "id": "USR-03",
+      "username": "moradi_wh",
+      "fullName": "آقای بهزاد مرادی",
+      "phone": "۰۹۱۹۵۵۵۱۲۳۴",
+      "email": "moradi@amiran-co.ir",
+      "role": "warehouse_manager",
+      "permissions": {
+        "canViewFinancials": false,
+        "canIssueInvoices": false,
+        "canDeleteEntries": false,
+        "canManageProduction": true,
+        "canManageInventory": true,
+        "canAccessApi": false,
+        "canManageBackup": false,
+        "canManagePlugins": false,
+        "canManageUsers": false
+      },
+      "status": "active",
+      "createdAt": "1403/02/10",
+      "lastLogin": "دیروز - ۱۶:۲۰"
+    },
+    {
+      "id": "USR-04",
+      "username": "kazemi_sales",
+      "fullName": "خانم مریم کاظمی",
+      "phone": "۰۹۳۵۷۷۷۸۸۹۹",
+      "email": "kazemi@amiran-co.ir",
+      "role": "sales_cashier",
+      "permissions": {
+        "canViewFinancials": false,
+        "canIssueInvoices": true,
+        "canDeleteEntries": false,
+        "canManageProduction": false,
+        "canManageInventory": false,
+        "canAccessApi": false,
+        "canManageBackup": false,
+        "canManagePlugins": false,
+        "canManageUsers": false
+      },
+      "status": "active",
+      "createdAt": "1403/03/01",
+      "lastLogin": "امروز - ۱۱:۱۰"
+    }
+  ],
+  "adminSettings": {
+    "masterPassword": "admin@amiran2026",
+    "companyCardNumber": "۶۰۳۷-۹۹۷۵-۱۱۲۲-۴۴۵۵",
+    "companyCardHolder": "گروه تولیدی و بازرگانی امیران - بانک ملی ایران",
+    "companyIban": "IR980170000000100445566778",
+    "companyBankName": "بانک ملی ایران - شعبه شهرک صنعتی شمس‌آباد",
+    "gatewayMerchantId": "zarinpal_sandbox_9941a",
+    "isSandboxGateway": true,
+    "defaultTrialDays": 14
+  },
+  "auditLogs": [
+    {
+      "id": "LOG-1",
+      "action": "ورود موفق به سیستم",
+      "actor": "مهندس امیران (مدیر ارشد)",
+      "target": "ورود به پنل مدیریت",
+      "timestamp": "1403/06/21 - ۱۱:۳۰",
+      "details": "ورود امن از طریق رمز عبور مدیریتی سیستم",
+      "type": "auth"
+    },
+    {
+      "id": "LOG-2",
+      "action": "تمدید اشتراک سالانه",
+      "actor": "سیستم بانکی شاپرک",
+      "target": "پلن حرفه‌ای",
+      "timestamp": "1403/05/01 - ۱۴:۳۲",
+      "details": "پرداخت موفق ۶,۹۰۰,۰۰۰ تومان از طریق درگاه شتاب",
+      "type": "subscription"
+    },
+    {
+      "id": "LOG-3",
+      "action": "تخصیص دسترسی به کاربر",
+      "actor": "مدیر کل سیستم",
+      "target": "خانم سمیرا صادقی",
+      "timestamp": "1403/06/10 - ۰۹:۰۰",
+      "details": "ارتقای نقش به مدیر مالی و حسابدار ارشد",
+      "type": "permission"
+    }
+  ]
+}

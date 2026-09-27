@@ -1,0 +1,6 @@
+{
+  "name": "حسابداری ابری امیران",
+  "description": "سیستم جامع حسابداری ابری برای کسب‌وکارهای تولیدی و بازرگانی با دسترسی موبایل و ویندوز، وب‌سرویس‌های API، اسناد دوبل و سیستم افزونه‌ها",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
